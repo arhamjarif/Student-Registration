@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration System</title>
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Registration System</h1>
+        <p>Welcome to our student registration portal.</p>
+
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#registration">Student Registration</a> |
+        </nav>
+    </header>
+
+    <hr>
+
+    <main id="home">
+
+        <section>
+            <h2>About Student Registration</h2>
+
+            <p>
+                 Please complete the <strong>Student Registration Form</strong>
+                carefully.
+                
+            </p>
+
+            <p>
+                Enter your <em>correct information</em>
+                in every required field.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <section id="registration">
+            <h2>Student Registration Form</h2>
+
+            <form action=" " method="post">
+
+                <fieldset>
+                    
+                <legend>Personal Information</legend> 
+
+                   
+                                <label for="studentName">Full Name:</label>
+                            
+                                <input type="text"
+                                       id="studentName"
+                                       name="studentName"
+                                       placeholder="Enter your full name"required><br><br>
+                                 
+                           
+                             <label for="studentID">Student ID:</label>
+                           
+                                <input type="text"
+                                       id="studentID"
+                                       name="studentID"
+                                       placeholder="Enter your student ID"
+                                       required><br><br>
+                                       
+                            
+                        
+                    <label for="email">Email Address:</label>
+                            
+                    
+                                     <input type="email"
+                                       id="email"
+                                       name="email"
+                                       placeholder="Enter your email"
+                                       required><br><br>
+                            
+                           
+                    
+
+                        
+            
+                                <label for="dob">Date of Birth:</label>    
+                          
+                                <input type="date"
+                                       id="dob"
+                                       name="dob"
+                                       required><br><br>
+                           
+                    
+
+                        
+                                <label>Gender:</label>
+                            
+                            
+                                <input type="radio"
+                                       id="male"
+                                       name="gender"
+                                       value="Male">
+                                <label for="male">Male</label>
+
+                                <input type="radio"
+                                       id="female"
+                                       name="gender"
+                                       value="Female">
+                                <label for="female">Female</label>
+
+                                <input type="radio"
+                                       id="other"
+                                       name="gender"
+                                       value="Other">
+                                <label for="other">Other</label><br><br>
+                           
+                       
+
+                       
+                                <label for="phone">Phone Number:</label>
+                           
+                                <input type="tel"
+                                       id="phone"
+                                       name="phone"
+                                       placeholder="Enter phone number"
+                                       required><br><br>
+                            
+                                <label for="address">Address:</label><br>
+                            
+                                <textarea id="address"
+                                          name="address"
+                                          rows="4"
+                                          col="20"
+                                        
+                                          placeholder="Enter your address" required></textarea><br><br>
+                            
+                                <label for="country">Country:</label>
+                            
+                           
+                                <select id="country" name="country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="India">India</option>
+                                    <option value="Other">Other</option>
+                                </select><br><br>
+                            
+                       
+                                <label for="photo">Student Photo:</label>
+                           
+                                <input type="file"
+                                       id="photo"
+                                       name="photo"
+                                       accept="image/*"><br><br>
+
+                 <label for="department">Department:</label>
+
+                    <select id="department" name="department" required>
+                        <option value="">Select Department</option>
+                        <option value="CSE">CSE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="BBA">BBA</option>
+                        <option value="English">English</option>
+                    </select>  <br><br>                    
+                           
+                   
+                </fieldset>
+
+
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear Form">
+
+            </form>
+        </section>
+
+        <hr>
+
+    </main>
+
+    <hr>
+
+</body>
+</html>

@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" href="https://img.freepik.com/premium-photo/vibrant-music-festival-logo-with-neon-colors-musical-icons-dark-background_606187-25826.jpg">
+        <link rel="icon" href="./imgs/logo.png">
         <title>Event Registration</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <div id="header">
-            <img src="https://img.freepik.com/premium-photo/vibrant-music-festival-logo-with-neon-colors-musical-icons-dark-background_606187-25826.jpg" alt="logo" width="250px">
-            <h1>MUSICFEST 2026</h1>
-        </div>
+            <div id="logo"><img src="./imgs/logo.png" alt="logo" width="250px"></div>
+            <div id="header">
+                <div class="hbutton"><a class="hlink" href="./index-event.html">Home</a></div>
+                <div class="hbutton"><a class="hlink" href="#intro">About</a></div>
+                <div class="hbutton"><a class="hlink" href="#contact-us">Contact Us</a></div>
+                <div class="hbutton"><a class="hlink" href="./admin.html">Admin</a></div>
+            </div>
+            <br>
+            <h1 id="title">MUSICFEST 2026</h1>
+            <br>
         <div id="intro"><p><pre>
 MusicFest is coming to AIUB to bring you a night to remember!
 Join us on 1st December 2026 and grab your seats to a concert by 6 bands renouned throughout the country!
@@ -17,8 +24,46 @@ Join us on 1st December 2026 and grab your seats to a concert by 6 bands renoune
 <b>8:00 pm - 11:00 pm</b>
 
         </pre></p></div>
-        <h1>REGISTER NOW</h1>
+        <br>
+        <h1 id="regbtn"><a id="reglink" href="#regform">REGISTER NOW</a></h1>
+        <br>
+        <h1>FEATURING</h1>
+        <div id="grid">
+            <div class="features">
+                <img src="./imgs/artcell.jpeg" alt="artcell" height="500px">
+                <br>
+                <h2>Artcell</h2>
+            </div>
+            <div class="features">
+                <img src="./imgs/aurthohin.jpg" alt="" height="500px">
+                <br>
+                <h2>Aurthohin</h2>
+            </div>
+            <div class="features">
+                <img src="./imgs/chirkutt.jpeg" alt="" height="500px">
+                <br>
+                <h2>Chirkutt</h2>
+            </div>
+            <div class="features">
+                <img src="./imgs/shironamhin.jpg" alt="" height="500px">
+                <br>
+                <h2>Shironamhin</h2>
+            </div>
+            <div class="features">
+                <img src="./imgs/shuuno.jpeg" alt="" height="500px">
+                <br>
+                <h2>Shuuno</h2>
+            </div>
+            <div class="features">
+                <img src="./imgs/black.jpg" alt="" height="500px">
+                <br>
+                <h2>Black</h2>
+            </div>
+        </div>
+        <br><br>
         <div id="regform">
+            
+            <h1>REGISTRATION</h1>
             <form method="get">
                 <table>
                     <tr>
@@ -34,12 +79,12 @@ Join us on 1st December 2026 and grab your seats to a concert by 6 bands renoune
                         <td><input type="email" name="email" id="email" placeholder="Enter your email" required></td>
                     </tr>
                     <tr>
-                        <td><label for="ticketno">Number of tickets</label></td>
+                        <td><label for="seatno">Number of seats</label></td>
                         <td>
-                            <label for="ticketno1">1</label>
-                            <input type="radio" name="ticketno" id="ticketno1" value="1" required>
-                            <label for="ticketno2">2</label>
-                            <input type="radio" name="ticketno" id="ticketno2" value="2">
+                            <label for="seatno1">1</label>
+                            <input type="radio" name="seatno" id="seatno1" value="1" required>
+                            <label for="seatno2">2</label>
+                            <input type="radio" name="seatno" id="seatno2" value="2">
                         </td>
                     </tr>
                     <tr>
@@ -49,5 +94,17 @@ Join us on 1st December 2026 and grab your seats to a concert by 6 bands renoune
                 </table>
             </form>
         </div>
+        <div id="contact-us">
+            <h1>CONTACT US</h1>
+            <h2>Phone</h2>
+            <p>01915248742</p>
+            <p>01912457486</p>
+            <p>01935426845</p>
+            <br>
+            <h2>Email</h2>
+            <p>musicfest2026@gmail.com</p>
+            
+        </div>
+
     </body>
 </html>

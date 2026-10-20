@@ -1,0 +1,33 @@
+body{
+    background-color: #050221;
+}
+*{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+}
+tr,th,td{
+            padding: 10px;
+        }
+table{
+    text-align: center;
+    margin: auto;
+}
+
+#back{
+    background-color: rgb(5 2 80);
+    border-radius: 12px;
+    display: inline-block;
+    padding: 7px;
+}
+a{
+    color: rgba(255, 255, 255, 0.733);
+    text-decoration: none;
+}
+
+#back:hover{
+    background-color: rgb(5 2 120);
+    a{
+        color: white;
+    }
+}
+

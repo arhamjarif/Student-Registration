@@ -1,0 +1,95 @@
+    *{
+        text-align: center;
+    }
+
+    #logo {
+        display: block;
+        background-color: rgb(5, 2, 33);
+    }
+    
+    #header{
+        position: sticky;
+        top: 0;
+        display: flex;
+        gap: 10px;
+        background-color: rgb(5, 2, 60);
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+
+    #regbtn{
+        display: inline-block;
+    }
+
+    .hlink, #reglink {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.623);
+    }
+
+    .hbutton, #regbtn{
+        padding: 20px;
+        background-color: rgb(5 2 60);
+        border-radius: 12px;
+        flex: 1;
+    }
+    .hbutton:hover, #regbtn:hover{
+        background-color: rgb(5 2 90);
+        .hlink, #reglink{
+            color: white;
+        }
+    }
+    h1, h2, #intro, label, p {
+        color: white;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    #grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    #regform, #title, #intro {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    #intro {
+        font-size: 125%;
+        padding: 20px;
+        scroll-margin-top: 200px;
+    }
+
+    #regform{
+        padding: 50px;
+        background-color: rgb(5, 2, 20,0.7);
+    }
+    button{
+        background-color: white;
+    }
+
+    
+
+    button:hover{
+        background-color: black;
+        color: white;
+    }
+
+    table{
+        align-items: center;
+        margin: auto;
+    }
+    
+    body{
+        background:fixed;
+        background-image: url(./imgs/image.png);
+        background-position: bottom ;
+        background-size: cover;
+        margin: 0;
+        
+    }
+
+
+    

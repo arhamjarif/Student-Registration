@@ -3,7 +3,8 @@
     <head>
         <link rel="icon" href="./imgs/logo.png">
         <title>Event Registration</title>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./event-style.css">
+        <script src="event-script.js" defer></script>
     </head>
     <body>
             <div id="logo"><img src="./imgs/logo.png" alt="logo" width="250px"></div>
@@ -11,7 +12,7 @@
                 <div class="hbutton"><a class="hlink" href="./index-event.html">Home</a></div>
                 <div class="hbutton"><a class="hlink" href="#intro">About</a></div>
                 <div class="hbutton"><a class="hlink" href="#contact-us">Contact Us</a></div>
-                <div class="hbutton"><a class="hlink" href="./admin.html">Admin</a></div>
+                <div class="hbutton" id="adminbutton"><p id="admintext">Admin</p></div>
             </div>
             <br>
             <h1 id="title">MUSICFEST 2026</h1>
@@ -64,7 +65,7 @@ Join us on 1st December 2026 and grab your seats to a concert by 6 bands renoune
         <div id="regform">
             
             <h1>REGISTRATION</h1>
-            <form method="get">
+            <form method="get" onsubmit="return validateForm()" novalidate>
                 <table>
                     <tr>
                         <td><label for="name">Name</label></td>
@@ -81,18 +82,22 @@ Join us on 1st December 2026 and grab your seats to a concert by 6 bands renoune
                     <tr>
                         <td><label for="seatno">Number of seats</label></td>
                         <td>
-                            <label for="seatno1">1</label>
-                            <input type="radio" name="seatno" id="seatno1" value="1" required>
-                            <label for="seatno2">2</label>
-                            <input type="radio" name="seatno" id="seatno2" value="2">
+                            <select name="seatno" id="seatno">
+                                <option value="">--Select Number of Seats--</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
                         </td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button type="submit">Register</button></td>
+                        <td><button id="submit" type="submit">Register</button>
+                        <button id="clear" type="reset">Clear</button></td>
                     </tr>
                 </table>
             </form>
+            <p id="total">Total: 0 TK</p><br>
+            <p id="error"></p>
         </div>
         <div id="contact-us">
             <h1>CONTACT US</h1>
@@ -106,5 +111,24 @@ Join us on 1st December 2026 and grab your seats to a concert by 6 bands renoune
             
         </div>
 
+        <div id="overlay">
+            <div id="login">
+                <h2>LOGIN</h2>
+                <table>
+                    <tr>
+                        <td>Username:</td>
+                        <td><input type="text" id="uname" placeholder="Enter username"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" id="pass" placeholder="Enter password"></td>
+                    </tr>
+                </table>
+                <br>
+                <button type="button" id="loginbutton">Login</button>
+                <p id="loginerror"></p>
+                <div id="loginexit">X</div>
+            </div>
+        </div>
     </body>
 </html>

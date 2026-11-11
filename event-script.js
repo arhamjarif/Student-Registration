@@ -45,13 +45,10 @@ function loginvalidate(){
 
 function displaylogin(){
     document.getElementById("overlay").style.display = "block";
-    document.getElementById("login").style.display = "block";
-
 }
 
 function closelogin(){
     document.getElementById("overlay").style.display = "none";
-    document.getElementById("login").style.display = "none";
 }
 
 function resettotal(){

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="club.css">
+    <script src="club.js" defer></script>
     <title>University Club Registration</title>
 </head>
+
 <body>
 
     <h1>University Club Registration</h1>
@@ -25,42 +28,41 @@
 
     <h2>Club Registration Form</h2>
 
-    <form>
+    <form id="clubForm">
 
         <label>Student Name:</label>
-        <input type="text" name="student_name">
+        <input type="text"id="student_name" name="student_name">
         <br><br>
-
         <label>Student ID:</label>
-        <input type="text" name="student_id">
+        <input type="number" id="student_id" name="student_id" required>
         <br><br>
-
         <label>Email:</label>
-        <input type="email" name="email">
-        <br><br>
-
-        <label>Department:</label>
-        <input type="text" name="department">
-        <br><br>
-
+        <input type="email" id="email" name="email">
+        <br><br><label>Select Department:</label>
+        <select name="department" id="department" >
+        <option value="">Select Department</option>
+        <option value="">Select Department</option>>
+            <option value="CSE">CSE</option>
+            <option value="EEE">EEE</option>
+            <option value="BBA">BBA</option>
+            <option value="LLB">LLB</option>
+            <option value="PHARMACY">PHARMACY</option>
+        </select>
         <label>Select Club:</label>
-        <select name="club">
+        <select name="club" id="club">
+            <option value="">Select Club</option>
             <option value="Programming">Programming Club</option>
             <option value="Robotics">Robotics Club</option>
             <option value="Cultural">Cultural Club</option>
             <option value="Sports">Sports Club</option>
         </select>
-        <br><br>
-
-        <label>Why do you want to join?</label>
+        <br><br><label>Why do you want to join? and DO yu have a previous experience</label>
         <br>
-        <textarea name="reason" rows="4" cols="30"></textarea>
-        <br><br>
-
-        <input type="submit" value="Register">
-        <input type="reset" value="Reset">
-
+        <textarea name="reason" id="reason" rows="4" cols="30"></textarea>
+        <br><br><input type="submit" value="Register">
+        <input type="reset" value="Clear">
     </form>
-
 </body>
 </html>
+    
+        

@@ -1,0 +1,43 @@
+*{
+    text-align: center;
+    color: white;
+}
+
+#header{
+    background-color: rgb(5, 2, 60);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 50px;
+}
+
+.button{
+    display: inline-block;
+    background-color: rgb(5, 2, 80);
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+}
+
+body{
+    background-color: rgb(5, 2, 33);
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+    font-size: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: rgb(167, 142, 0);
+    a{
+        color: rgb(20, 20, 20);
+    }
+}

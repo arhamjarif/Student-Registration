@@ -39,7 +39,7 @@ function loginvalidate(){
         document.getElementById("loginerror").innerHTML = "Incorrect Username/Password";
     }
     else{
-        window.location.href = "./admin.html";
+        window.location.href = "./event-admin.html";
     }
 }
 

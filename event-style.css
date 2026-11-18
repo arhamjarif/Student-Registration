@@ -29,6 +29,7 @@
 
 #regbtn{
     display: inline-block;
+    margin-bottom: 150px;
 }
 
 .hbutton:hover, #regbtn:hover {
@@ -74,6 +75,7 @@ h1 {
     padding: 50px;
     background-color: rgba(5, 2, 20, 0.7);
     scroll-margin-top: 100px;
+    margin-top: 150px;
 }
 
 button {
@@ -92,10 +94,18 @@ table {
 
 #total {
     color: rgba(175, 149, 1, 0.774);
+    font-size: 125%;
 }
 
 #error, #loginerror {
     color: red;
+}
+
+#contact-us {
+    background: linear-gradient(rgb(5, 2, 90), rgb(5, 2, 23));
+    padding-bottom: 25px;
+    padding-top: 5px;
+    margin-top: 300px;
 }
 
 body {

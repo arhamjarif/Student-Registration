@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="./imgs/logo.png">
+        <title>Event Registration</title>
+        <link rel="stylesheet" href="./event-style.css">
+        <script src="event-script.js" defer></script>
+    </head>
+    <body>
+            <div id="logo"><img src="./imgs/logo.png" alt="logo" width="250px"></div>
+            <div id="header">
+                <div class="hbutton"><a class="hlink" href="./mainpage.html">Home</a></div>
+                <div class="hbutton"><a class="hlink" href="#intro">About</a></div>
+                <div class="hbutton"><a class="hlink" href="#contact-us">Contact Us</a></div>
+                <div class="hbutton" id="adminbutton"><p id="admintext">Admin</p></div>
+            </div>
+            <br>
+            <h1 id="title">MUSICFEST 2026</h1>
+            <br>
+        <div id="intro"><p><pre>
+MusicFest is coming to AIUB to bring you a night to remember!
+Join us on 1st December 2026 and grab your seats to a concert by 6 bands renouned throughout the country!
+<b><i>You may only bring 1 person with you per student.</i></b>
+<b>Event Date: 1st Decemeber, 2026</b>
+<b>8:00 pm - 11:00 pm</b>
+
+        </pre></p></div>
+        <br>
+        <h1 id="regbtn"><a id="reglink" href="#regform">REGISTER NOW</a></h1>
+        <br>
+        <h1>FEATURING</h1>
+        <div id="grid">
+            <div class="features">
+                <img src="./imgs/artcell.jpeg" alt="artcell" height="500px">
+                <br>
+                <h2>Artcell</h2>
+            </div>
+            <div class="features">
+                <img src="./imgs/aurthohin.jpg" alt="" height="500px">
+                <br>
+                <h2>Aurthohin</h2>
+            </div>
+            <div class="features">
+                <img src="./imgs/chirkutt.jpeg" alt="" height="500px">
+                <br>
+                <h2>Chirkutt</h2>
+            </div>
+            <div class="features">
+                <img src="./imgs/shironamhin.jpg" alt="" height="500px">
+                <br>
+                <h2>Shironamhin</h2>
+            </div>
+            <div class="features">
+                <img src="./imgs/shuuno.jpeg" alt="" height="500px">
+                <br>
+                <h2>Shuuno</h2>
+            </div>
+            <div class="features">
+                <img src="./imgs/black.jpg" alt="" height="500px">
+                <br>
+                <h2>Black</h2>
+            </div>
+        </div>
+        <br><br>
+        <div id="regform">
+            
+            <h1>REGISTRATION</h1>
+            <form method="get" onsubmit="return validateForm()" novalidate>
+                <table>
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" name="name" id="name" placeholder="Enter your full name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id">Student ID</label></td>
+                        <td><input type="text" name="id" id="id" placeholder="Enter you student ID" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" name="email" id="email" placeholder="Enter your email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="seatno">Number of seats</label></td>
+                        <td>
+                            <select name="seatno" id="seatno">
+                                <option value="">--Select Number of Seats--</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button id="submit" type="submit">Register</button>
+                        <button id="clear" type="reset">Clear</button></td>
+                    </tr>
+                </table>
+            </form>
+            <p id="total">Total: 0 TK</p><br>
+            <p id="error"></p>
+        </div>
+        <div id="contact-us">
+            <h1>CONTACT US</h1>
+            <h2>Phone</h2>
+            <p>01915248742</p>
+            <p>01912457486</p>
+            <p>01935426845</p>
+            <br>
+            <h2>Email</h2>
+            <p>musicfest2026@gmail.com</p>
+            
+        </div>
+
+        <div id="overlay">
+            <div id="login">
+                <h2>LOGIN</h2>
+                <table>
+                    <tr>
+                        <td>Username:</td>
+                        <td><input type="text" id="uname" placeholder="Enter username"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" id="pass" placeholder="Enter password"></td>
+                    </tr>
+                </table>
+                <br>
+                <button type="button" id="loginbutton">Login</button>
+                <p id="loginerror"></p>
+                <div id="loginexit">X</div>
+            </div>
+        </div>
+    </body>
+</html>

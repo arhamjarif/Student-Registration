@@ -1,0 +1,150 @@
+* {
+    text-align: center;
+}
+
+#logo {
+    display: block;
+    background-color: rgb(5, 2, 33);
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    gap: 10px;
+    background-color: rgb(5, 2, 60);
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.hbutton, #regbtn {
+    padding: 20px;
+    background-color: rgb(5, 2, 60);
+    border-radius: 12px;
+}
+
+.hbutton {
+    flex: 1;
+}
+
+#regbtn{
+    display: inline-block;
+    margin-bottom: 150px;
+}
+
+.hbutton:hover, #regbtn:hover {
+    background-color: rgb(5, 2, 90);
+    .hlink, #reglink{
+        color: white;
+    }
+}
+
+.hlink, #reglink {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.623);
+}
+
+#admintext {
+    color: rgba(255, 255, 255, 0.623);
+    margin-top: 0;
+}
+
+h1, h2, #intro, label, p {
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#intro {
+    display: inline-block;
+    font-size: 125%;
+    padding: 20px;
+    scroll-margin-top: 200px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#regform {
+    display: inline-block;
+    padding: 50px;
+    background-color: rgba(5, 2, 20, 0.7);
+    scroll-margin-top: 100px;
+    margin-top: 150px;
+}
+
+button {
+    background-color: white;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+table {
+    align-items: center;
+    margin: auto;
+}
+
+#total {
+    color: rgba(175, 149, 1, 0.774);
+    font-size: 125%;
+}
+
+#error, #loginerror {
+    color: red;
+}
+
+#contact-us {
+    background: linear-gradient(rgb(5, 2, 90), rgb(5, 2, 23));
+    padding-bottom: 25px;
+    padding-top: 5px;
+    margin-top: 300px;
+}
+
+body {
+    background: fixed;
+    background-image: url(./imgs/image.png);
+    background-position: bottom;
+    background-size: cover;
+    margin: 0;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1;
+}
+
+#login {
+    display: inline-block;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    background-color: rgba(5, 2, 20, 0.7);
+    z-index: 2;
+}
+
+#loginexit {
+    display: inline-block;
+    background-color: rgb(5, 2, 90);
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

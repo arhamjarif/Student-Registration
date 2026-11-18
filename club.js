@@ -107,3 +107,14 @@ form.addEventListener("submit",function(event) {
 form.addEventListener("reset", function() {
     alert("Form has been reset.");
 });
+let page1 = document.getElementById("page1");
+let page2 = document.getElementById("page2");
+
+let nextPage = document.getElementById("nextPage");
+
+nextPage.addEventListener("click", function() {
+
+    page1.style.display = "none";
+
+    page2.style.display = "block";
+});

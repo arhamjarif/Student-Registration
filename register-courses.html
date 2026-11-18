@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register Courses</title>
+
+    <link rel="stylesheet" href="course-style.css">
+    <script src="course-script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Course Registration</h1>
+        <p class="center">Register your desired courses</p>
+    </div>
+
+    <div class="nav">
+        <a href="course-dashboard.html">Dashboard</a>
+        <a href="courses.html">Available Courses</a>
+        <a href="course-index.html">Logout</a>
+    </div>
+
+    <div class="content">
+
+        <div class="form-box">
+
+            <h2>Course Registration Form</h2>
+
+            <form id="courseForm" novalidate>
+
+                <label for="courseName">Student Name</label>
+                <input type="text" id="courseName"
+                    placeholder="Enter your name" required>
+
+                <label for="courseEmail">Email</label>
+                <input type="text" id="courseEmail"
+                    placeholder="Enter your email" required>
+
+              <label for="department">Select Department</label>
+
+                <select id="department" required>
+
+                    <option value="">Choose a department</option>
+
+                    <option value="CSE">CSE</option>
+
+                    <option value="EEE">EEE</option>
+
+                    <option value="IP">IP</option>
+
+                </select>
+
+
+                <label for="course">Select Course</label>
+
+                <select id="course" required>
+
+                    <option value="">Choose a course</option>
+
+                    <option value="CSE311|Database Management System">
+                        Database Management System
+                    </option>
+
+                    <option value="CSE320|Operating Systems">
+                        Operating Systems
+                    </option>
+
+                    <option value="CSE411|Web Technologies">
+                        Web Technologies
+                    </option>
+
+                    <option value="MAT212|Mathematics II">
+                        Mathematics II
+                    </option>
+
+                </select>
+
+
+                <label for="semester">Semester</label>
+
+                <select id="semester">
+
+                    <option value="Spring">Spring</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Fall">Fall</option>
+
+                </select>
+
+
+                <label for="section">Section</label>
+
+                <select id="section">
+
+                    <option value="A">Section A</option>
+                    <option value="B">Section B</option>
+                    <option value="C">Section C</option>
+
+                </select>
+
+
+                <label for="classType">Class Type</label>
+
+                <select id="classType">
+
+                    <option value="Regular">Regular</option>
+                    <option value="Retake">Retake</option>
+
+                </select>
+
+
+                <br><br>
+
+                <input type="checkbox" id="terms" required>
+                I agree to the terms and conditions
+
+                <br><br>
+
+                <button type="submit">Register Course</button>
+
+                <button type="reset" class="reset-button">
+                    Reset
+                </button>
+
+            </form>
+
+            <p id="courseMessage"></p>
+
+        </div>
+
+        <div id="myCourses">
+
+            <h2>My Registered Courses</h2>
+
+            <p id="emptyMessage">No courses registered yet.</p>
+
+            <div id="courseList"></div>
+
+        </div>
+
+        <br>
+
+        <a class="button-link" href="course-dashboard.html">
+            Back to Dashboard
+        </a>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: dimgray;
+    background-color: aliceblue;
+}
+
+h1, h2 {
+    margin-bottom: 12px;
+}
+
+h2 {
+    color: midnightblue;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+header {
+    background-color: midnightblue;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+
+
+
+/* Hover effect */
+div a:hover {
+    background-color: burlywood;
+    color: midnightblue;
+}
+
+.row .side:hover {
+    background-color: steelblue;
+}
+
+.row .main:hover {
+    background-color: seagreen;
+}
+
+.row a:hover {
+    color: brown;
+}
+
+main {
+    max-width: 850px;
+    width: 92%;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    padding: 22px;
+    margin-bottom: 25px;
+    border: 1px solid lightsteelblue;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+#student-details p {
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: aliceblue;
+    border-left: 4px solid midnightblue;
+    border-radius: 4px;
+}
+
+#student-details strong {
+    display: inline-block;
+    min-width: 145px;
+    color: midnightblue;
+}
+
+main > p a {
+    display: inline-block;
+    background-color: midnightblue;
+    color: white;
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 5px;
+}
+
+main > p a:hover {
+    background-color: royalblue;
+}
+
+footer {
+    background-color: rgb(37, 37, 109);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    #student-details strong {
+        min-width: 0;
+    }
+
+    nav {
+    display: none;
+}
+}
+

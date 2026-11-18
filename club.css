@@ -1,0 +1,185 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f1;
+    color: #263d34;
+    padding: 30px;
+}
+h1 {
+    color: #294638;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+h2 {
+    color: #294638;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #294638;
+    margin-top: 15px;
+}
+
+p {
+    color: #747c75;
+    margin-bottom: 10px;
+}
+#clubForm {
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 750px;
+    border: 1px solid #dce2d9;
+    border-radius: 12px;
+    position: relative;
+}
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #dce2d9;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    background-color: #fcfdfb;
+}
+#clubForm label {
+    color: #294638;
+    font-size: 13px;
+}
+input:focus, select:focus, textarea:focus {
+    border: 2px solid #365e49;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #244631;
+}
+
+input[type="reset"]:hover {
+    background-color: #e5ebe5;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    background-color: #365e49;
+    width: 60px;
+    height: 3px;
+    margin-top: 5px;
+}
+
+#clubForm label {
+    display: block;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+}
+
+input[type="submit"] {
+    background-color: #365e49;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    background-color: white;
+    color: #365e49;
+    padding: 12px 25px;
+    border: 1px solid #365e49;
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#clubForm div {
+    margin-top: 10px;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    #clubForm {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+#page1 {
+    display: block;
+}
+
+#page2 {
+    display: none;
+}
+
+#nextPage {
+    background-color: #c13c18;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#nextPage:hover {
+    background-color: #244631;
+}
+
+#clubForm {
+    position: relative;
+    padding-bottom: 75px;
+}
+
+/* Register Button */
+
+#clubForm input[type="submit"] {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+
+    background-color: #365e49;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+}
+
+/* Clear Button */
+
+#clubForm input[type="reset"] {
+    position: absolute;
+    bottom: 20px;
+    right: 170px;
+
+    background-color: white;
+    color: #365e49;
+    padding: 12px 30px;
+    border: 1px solid #dce2d9;
+    border-radius: 6px;
+}

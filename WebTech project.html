@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Course Registration </title>
+
+    <link rel="icon" href="favicon.png" />
+  </head>
+
+  <body>
+    <h1>Student Course Registration System </h1>
+    <h2>Course Registration Form</h2>
+
+     <p>Welcome to the Course Registration System </p>
+    <p>Please fill up the form below to register for courses </p>
+  <br />
+   
+  <div>Register for your desired courses </div>
+    <span>Enter Your information </span>
+
+    <br /><br />
+
+    <a href="https://portal.aiub.edu" target="_blank">Library Portal</a>
+    <br>
+
+     <a href="Portal.html" target="_blank"> Go to the Library Portal</a>
+  </br>
+
+   <h3> Available Courses </h2>
+     
+       <table border=" 1 ">
+      <tr>
+        <th>Course Name</th>
+        <th>Course Code</th>
+        <th>Credit</th>
+        <th>Department</th>
+      </tr>
+
+       <tr>
+        <td> Database Management System </td>
+        <td> CSE311 </td>
+        <td>3</td>
+        <td> CSE </td>
+      </tr>
+
+       <tr>
+        <td> Operating Systems </td>
+        <td> CSE320 </td>
+        <td>3</td>
+        <td>CSE</td>
+      </tr>
+
+      <tr>
+        <td>Web Technologies </td>
+        <td> CSE411 </td>
+        <td>3</td>
+        <td>CSE</td>
+      </tr>
+
+       <tr>
+        <td> Mathematics II</td>
+        <td> MAT212 </td>
+        <td> 3 </td>
+        <td>CSE</td>
+      </tr>
+    </table>
+    <br />
+
+     <fieldset> 
+  <legend> Course Registration Form </legend>
+
+  <form action="" method= "get">
+    <table>
+      <tr>
+        <td><label for="studentid">Student ID</label> </td>
+        <td>
+          <input type="text" id="studentid" name="studentid"
+          placeholder="Enter your student ID" required />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="name">Student Name</label></td>
+        <td>
+          <input type="text" id="name" name="name"
+          placeholder="Enter your name" required />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="email"> Email </label></td>
+        <td>
+          <input type="email" id="email" name="email"
+          placeholder="Enter your email" required />
+        </td>
+      </tr>
+
+       <tr>
+        <td><label for="department">Department</label></td>
+        <td>
+          <select id="department" name="department">
+            <option value="cse">CSE</option>
+            <option value="eee">EEE</option>
+            <option value="bba">COA</option>
+          </select>
+        </td>
+      </tr>
+       <tr>
+        <td><label for="course">Select Course</label></td>
+        <td>
+          <select id="course" name="course">
+            <option value="CSE311">Database Management System</option>
+            <option value="CSE320">Operating Systems </option>
+            <option value="CSE411">Web Technologies </option>
+            <option value="MAT212">Mathematics II </option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="semester">Semester</label></td>
+        <td>
+          <select id="semester" name="semester">
+            <option value="spring"> Spring </option>
+            <option value="summer"> Summer </option>
+            <option value="fall"> Fall </option>
+          </select>
+        </td>
+      </tr>
+
+        <tr>
+        <td><label for="section">Section </label></td>
+        <td>
+          <select id="section" name="section">
+            <option value="A">Section A</option>
+            <option value="B">Section B</option>
+            <option value="C">Section C</option>
+          </select>
+        </td>
+      </tr>
+
+       <tr>
+        <td> Class Type </td>
+        <td>
+          <input type="radio" id="regular" name="classtype"
+          value="regular" />
+          <label for ="regular"> Regular </label>
+
+          <input type="radio" id="retake" name="classtype"
+          value="retake" />
+          <label for ="retake"> Retake </label>
+        </td>
+      </tr>
+
+       <tr>
+        <td><label for="phone"> Phone Number </label></td>
+        <td>
+          <input type="text" id="phone" name="phone"
+          placeholder ="Enter your phone number" />
+        </td>
+      </tr>
+
+       <tr>
+        <td><label for="address"> Address </label></td>
+        <td>
+          <textarea id="address" name="address"
+          rows="4" cols="15"> </textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Terms</td>
+        <td>
+          <input type="checkbox" id="terms" name ="terms" required />
+          <label for="terms"> I agree to the terms and conditions </label>
+        </td>
+      </tr>
+     <tr>
+        <td></td>
+        <td>
+          <button type ="submit"> Register Course </button>
+          <button type ="reset"> Reset </button>
+        </td>
+      </tr>
+      </table>
+    </form>
+  </fieldset>
+
+
+
+
+
+
